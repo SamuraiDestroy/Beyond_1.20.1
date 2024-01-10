@@ -14,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.samuraidestroy.beyond.item.ModCreativeModeTabs;
 import net.samuraidestroy.beyond.item.ModItems;
 import org.slf4j.Logger;
 
@@ -30,6 +31,8 @@ public class Beyond
     public Beyond()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
@@ -54,11 +57,11 @@ public class Beyond
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.SOUL_SHARD);
-            event.accept(ModItems.SOUL_GEM);
-            event.accept(ModItems.SOUL_STEEL);
-        }
+//        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+//            event.accept(ModItems.SOUL_SHARD);
+//            event.accept(ModItems.SOUL_GEM);
+//            event.accept(ModItems.SOUL_STEEL);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
