@@ -1,6 +1,6 @@
 {
   "parent:": "item/generated",
   "textures": {
-    "layer0": "beyond:item/soul_shard"
+    "layer0": "beyond:item/soul_steel"
   }
 }
