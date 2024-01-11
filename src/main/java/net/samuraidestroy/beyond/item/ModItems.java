@@ -13,6 +13,7 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_SHARD = ITEMS.register("soul_shard", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SOUL_GEM = ITEMS.register("soul_gem", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SOUL_STEEL = ITEMS.register("soul_steel", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ENERGISED_SOUL_SHARD = ITEMS.register("energised_soul_shard", () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

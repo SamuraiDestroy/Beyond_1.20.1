@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.samuraidestroy.beyond.Beyond;
+import net.samuraidestroy.beyond.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Beyond.MOD_ID);
@@ -15,6 +16,10 @@ public class ModCreativeModeTabs {
         output.accept(ModItems.SOUL_SHARD.get());
         output.accept(ModItems.SOUL_GEM.get());
         output.accept(ModItems.SOUL_STEEL.get());
+        output.accept(ModItems.ENERGISED_SOUL_SHARD.get());
+        output.accept(ModBlocks.SOUL_SHARD_BLOCK.get());
+        output.accept(ModBlocks.SOUL_GEM_BLOCK.get());
+        output.accept(ModBlocks.SOUL_STEEL_BLOCK.get());
     }).build());
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

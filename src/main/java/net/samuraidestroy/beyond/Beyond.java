@@ -14,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.samuraidestroy.beyond.block.ModBlocks;
 import net.samuraidestroy.beyond.item.ModCreativeModeTabs;
 import net.samuraidestroy.beyond.item.ModItems;
 import org.slf4j.Logger;
@@ -35,6 +36,7 @@ public class Beyond
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
