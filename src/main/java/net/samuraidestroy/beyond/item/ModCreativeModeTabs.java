@@ -20,6 +20,8 @@ public class ModCreativeModeTabs {
         output.accept(ModBlocks.SOUL_SHARD_BLOCK.get());
         output.accept(ModBlocks.SOUL_GEM_BLOCK.get());
         output.accept(ModBlocks.SOUL_STEEL_BLOCK.get());
+        output.accept(ModBlocks.SOUL_GEM_ORE.get());
+        output.accept(ModBlocks.DEEPSLATE_SOUL_GEM_ORE.get());
     }).build());
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

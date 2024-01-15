@@ -20,6 +20,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOUL_SHARD_BLOCK = registerBlock("soul_shard_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> SOUL_GEM_BLOCK = registerBlock("soul_gem_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.DRIPSTONE_BLOCK)));
     public static final RegistryObject<Block> SOUL_STEEL_BLOCK = registerBlock("soul_steel_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> SOUL_GEM_ORE = registerBlock("soul_gem_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> DEEPSLATE_SOUL_GEM_ORE = registerBlock("deepslate_soul_gem_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
