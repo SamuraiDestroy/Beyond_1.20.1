@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "sss",
+    "sss",
+    "sss"
+  ],
+  "key": {
+    "s": {
+      "item:": "beyond:soul_gem"
+    }
+  },
+  "result": {
+    "item": "beyond:soul_gem_block"
+  }
+}

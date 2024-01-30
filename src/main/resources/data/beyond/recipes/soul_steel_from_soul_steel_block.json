@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "beyond:soul_steel_block"
+    }
+  ],
+  "result": {
+    "item": "beyond:soul_steel",
+    "count": "9"
+  }
+}

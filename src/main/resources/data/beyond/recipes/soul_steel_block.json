@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "sss",
+    "sss",
+    "sss"
+  ],
+  "key": {
+    "s": {
+      "item:": "beyond:soul_steel"
+    }
+  },
+  "result": {
+    "item": "beyond:soul_steel_block"
+  }
+}
