@@ -15,7 +15,7 @@ public class ModCreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> CHAPTER_I = CREATIVE_MODE_TABS.register("chapter_i_tab", () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SOUL_GEM.get())).title(Component.translatable("creativetab.chapter_i_tab")).displayItems((itemDisplayParameters, output) -> {
         output.accept(ModItems.SOUL_SHARD.get());
         output.accept(ModItems.SOUL_GEM.get());
-        output.accept(ModItems.SOUL_STEEL.get());
+        output.accept(ModItems.SOUL_STEEL_INGOT.get());
         output.accept(ModItems.ENERGISED_SOUL_SHARD.get());
         output.accept(ModBlocks.SOUL_SHARD_BLOCK.get());
         output.accept(ModBlocks.SOUL_GEM_BLOCK.get());
